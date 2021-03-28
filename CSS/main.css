@@ -1,0 +1,64 @@
+
+.card{
+    float: left;
+    width: 200px;
+    height: 150px;
+    background-color: aqua;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.text {
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+}
+
+button{
+    max-width: 150px;
+    border: none;
+    padding: 0.3em 0.8em;
+    background-color: rgb(97, 100, 247);
+    color: white;
+    font-size: 0.8rem;
+    outline:none;
+}
+
+
+button:hover {
+    background-color: rgb(104, 190, 247);
+}
+button:active {
+    background-color: rgb(247, 104, 104);
+}
+
+
+.preloader {
+     position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;  
+    /* overflow: hidden; */
+    background: rgb(0, 0, 0);
+    /* z-index: 1001; */
+  }
+  
+  .preloader__image {
+    position: relative;
+     top: 30%;
+     left: 35%; 
+    width: 400px;
+    height: 300px;
+    /* margin-top: 50px;
+    margin-left: 50px; */
+    background: url('/Users/vladi/Desktop/1.gif') no-repeat 50% 50%;
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
